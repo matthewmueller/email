@@ -1,0 +1,9 @@
+.title {
+  color: red;
+}
+
+.body {
+  color: blue;
+  background-image: url('http://www.google.com/images/srpr/logo4w.png');
+  height: 400px;
+}
