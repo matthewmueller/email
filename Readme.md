@@ -3,15 +3,20 @@
 
   fluent email using sendmail
 
+## Installation
+
+    npm install email.js
+
 ## Example
 
 ```js
 var email = new Email;
 
 email
-  .from('mattmuelle@gmail.com')
-  .to('mattmuelle@gmail.com')
-  .subject('wahoo! {name}', { name : 'matt' })
+  .from('bigcatwithhat@gmail.com')
+  .to('thing1@gmail.com')
+  .to('thing2@gmail.com')
+  .subject('hello {name}!', { name : 'things' })
   .body(join(__dirname, 'body.jade'))
   .style(join(__dirname, 'body.css'))
   .send(function(err) {
